@@ -14,3 +14,5 @@ export const rootReducer = combineReducers({
     UserJoinReducer,
     UserUpdateReducer
 })
+
+//commit test 01 - 2021-01-26
