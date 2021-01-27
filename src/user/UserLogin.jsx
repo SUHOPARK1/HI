@@ -27,5 +27,13 @@ export default function UserLoginReducer(state = [], action){
 }
 
 export const UserLogin = () => {
-    return (<></>)
+    const test = e => {
+        e.preventDefault()
+        alert(`click`)
+        axios.get(`http://localhost:8080/hello`)
+    }
+    return (<>
+    <bouuton onClick={test}>Hello Boot</bouuton>
+    </>)
+
 }
