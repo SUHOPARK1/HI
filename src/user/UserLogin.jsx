@@ -30,10 +30,13 @@ export const UserLogin = () => {
     const test = e => {
         e.preventDefault()
         alert(`click`)
-        axios.get(`http://localhost:8080/hello`)
+        axios.get(`http://localhost:8080/test`)
+        .then(response => {
+            alert(`성공 ${JSON.stringify(response.data)}`)
+        })
     }
     return (<>
-    <bouuton onClick={test}>Hello Boot</bouuton>
+    <button onClick={test}>Hello Boot</button>
     </>)
 
 }
